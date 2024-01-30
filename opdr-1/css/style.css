@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "hr hr hr hr hr hr hr hr"
+    "lt mn mn mn mn mn mn rt"
+    "ft ft ft ft ft ft ft ft"
+    ;
+}
+
+header {
+    height: 50px;
+    border: 1px solid orange;
+    grid-area: hr;
+}
+
+.left {
+    border: 1px solid orange;
+    grid-area: lt;
+}
+
+main {
+    border: 1px solid orange;
+    grid-area: mn;
+}
+
+.right {
+    border: 1px solid orange;
+    grid-area: rt;
+}
+
+footer {
+    height: 50px;
+    border: 1px solid orange;
+    grid-area: ft;
+}
+
+
+/* .inner-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    list-style: none;
+    gap: 10px;
+}
+
+.inner-card li {
+    border: 2px solid orange;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+} */
