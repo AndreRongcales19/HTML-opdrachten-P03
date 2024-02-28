@@ -9,5 +9,5 @@ function sendData() {
     const message = document.querySelector("#user_message").value;
     console.log((firstname, email, message));
 
-    fetch()
+    fetch(`http://localhost:3000/message?name=${firstname}&email=${email}&message=${message}`);
 }
